@@ -10,3 +10,5 @@ build/
 
 # IDE files
 .vscode/
+
+package-lock.json
