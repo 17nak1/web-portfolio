@@ -26,9 +26,8 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            NAK
-            <i className='fab fa-typo3' />
+          <Link to='https://www.queensu.ca/' className='navbar-logo' onClick={closeMobileMenu}>
+            <img src="/images/queens-university-logo-1.png" alt="" className='navbar-small-logo'/>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -45,7 +44,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Bio
               </Link>
             </li>
             <li className='nav-item'>
@@ -54,11 +53,38 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Research
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Presentation
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Teaching
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Group Members
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link
                 to='/sign-up'
                 className='nav-links-mobile'
@@ -66,9 +92,9 @@ function Navbar() {
               >
                 Sign Up
               </Link>
-            </li>
+            </li> */}
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
         </div>
       </nav>
     </>

@@ -20,13 +20,22 @@
 
 .navbar-logo {
   color: #fff;
-  justify-self: start;
-  margin-left: 20px;
+  /* justify-self: start; */
+  /* margin-left: 20px; */
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   align-items: center;
+  transform: none;
+  margin-right: 30%;
+}
+
+.navbar-small-logo {
+  width:auto;
+  max-height: 100%;
+  height: 65px;
+  margin-left: 0;
 }
 
 .fa-typo3 {
@@ -36,7 +45,7 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(6, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -75,7 +84,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1055px) {
   .NavbarItems {
     position: relative;
   }
@@ -118,6 +127,10 @@
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
+  }
+
+  .navbar-small-logo {
+    transform: translate(25%, -35%)
   }
 
   .menu-icon {
