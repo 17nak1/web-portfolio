@@ -14,6 +14,7 @@ function VideoSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          onClick={console.log("Yay!")}
         >
           GET STARTED
         </Button>
