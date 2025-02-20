@@ -6,28 +6,36 @@ import { Button } from './Button';
 
 function VideoSection() {
   return (
-    <div className='video-container'>
+    <div className='container'>
       <div class="text-column">
+        <div className="introduction-section">
+         <p style={{ fontSize: '3em' }}>Hi! I’m Nazila.</p>
+        </div>
         <TypeAnimation
           sequence={[
-            'Hi! I’m Nazila.',
-            1500, // wait for 1 second
             'I’m a Software Developer.',
             1500, // wait for 1 second
             'Building innovative solutions.',
             1500, // wait for 1 second
           ]}
-          speed={40}
+          speed={50}
           wrapper="span"
           repeat={Infinity}
           cursor={true}
-          style={{ fontSize: '2em', color:'rgb(74 81 106)'}}
+          style={{ fontSize: '3.5em', color:'rgb(74 81 106)'}}
         />
+        <div className="description-section">
+          <p> 
+            Passionate about building scalable solutions, solving complex problems, and turning ideas into reality.
+            Bridging mathematics and software to create innovative and efficient applications.
+          </p>
+        </div>
         <div className='aboutme-btns'>
         <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          to='/about'
         >
           More About Me
         </Button>
