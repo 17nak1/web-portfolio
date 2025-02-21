@@ -37,12 +37,10 @@ p {
 
 .introduction-section {
   margin-bottom: 20px;
-  /* margin-left: 4em; */
 }
 
 .description-section {
   margin-top: 10px;
-  margin-left: 4em;
 }
 
 .container > span {
@@ -67,14 +65,28 @@ p {
   margin-left: 4px;
 }
 
-@media screen and (max-width: 960px) {
-  .container > h1 {
-    font-size: 70px;
-    margin-top: -150px;
-  }
+.animated-text {
+  font-size: 3.5em;
+  color: rgb(53 58 73);
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+  }
+
+  .image-column {
+    order: -1;
+  }
+
+  .image-column img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .container > span {
     font-size: 15px;
     margin-top: -100px;
@@ -87,5 +99,9 @@ p {
 
   .btn {
     width: 100%;
+  }
+
+  .animated-text {
+    font-size: 1.8em;
   }
 }

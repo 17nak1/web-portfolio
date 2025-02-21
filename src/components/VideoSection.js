@@ -7,9 +7,9 @@ import { Button } from './Button';
 function VideoSection() {
   return (
     <div className='container'>
-      <div class="text-column">
-        <div className="introduction-section">
-        <p style={{ fontSize: '3em', color: 'rgb(68 74 94)' }}>Hi! I’m Nazila.</p>
+      <div class='text-column'>
+        <div className='introduction-section'>
+          <p style={{ fontSize: '3em', color: 'rgb(68 74 94)' }}>Hi! I’m Nazila.</p>
         </div>
         <TypeAnimation
           sequence={[
@@ -19,12 +19,12 @@ function VideoSection() {
             1500, // wait for 1 second
           ]}
           speed={50}
-          wrapper="span"
+          wrapper='span'
           repeat={Infinity}
           cursor={true}
-          style={{ fontSize: '3.5em', color:'rgb(53 58 73)'}}
+          className='animated-text'
         />
-        <div className="description-section">
+        <div className='description-section'>
           <p> 
             Passionate about building scalable solutions, solving complex problems, and turning ideas into reality.
             Bridging mathematics and software to create innovative and efficient applications.
@@ -41,10 +41,10 @@ function VideoSection() {
         </Button>
       </div>
       </div>
-      <div class="image-column">
+      <div class='image-column'>
         <img  alt='' src='/images/woman-coder.jpg'/>
-        {/* <p class="image-credit">
-          Image by <a href="https://www.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_65309450.htm" target="_blank" rel="noopener noreferrer">Freepik</a>
+        {/* <p class='image-credit'>
+          Image by <a href='https://www.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_65309450.htm' target='_blank' rel='noopener noreferrer'>Freepik</a>
         </p> */}
       </div>
     </div>
