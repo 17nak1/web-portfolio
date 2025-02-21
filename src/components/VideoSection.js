@@ -9,7 +9,7 @@ function VideoSection() {
     <div className='container'>
       <div class="text-column">
         <div className="introduction-section">
-         <p style={{ fontSize: '3em' }}>Hi! I’m Nazila.</p>
+        <p style={{ fontSize: '3em', color: 'rgb(68 74 94)' }}>Hi! I’m Nazila.</p>
         </div>
         <TypeAnimation
           sequence={[
@@ -22,7 +22,7 @@ function VideoSection() {
           wrapper="span"
           repeat={Infinity}
           cursor={true}
-          style={{ fontSize: '3.5em', color:'rgb(74 81 106)'}}
+          style={{ fontSize: '3.5em', color:'rgb(53 58 73)'}}
         />
         <div className="description-section">
           <p> 
