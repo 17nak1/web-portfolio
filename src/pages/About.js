@@ -1,19 +1,32 @@
-import React from 'react'
+import React from 'react';
+import './About.css'
 
 function About() {
   return (
-    <div className='container'>
-      <p>I’m a Software Developer with a strong background in Mathematics, based in Kingston, ON, Canada. Over the past few years, I’ve had the opportunity to work on a diverse range of projects, developing scalable web applications, designing innovative software solutions, and helping teams drive technical excellence.
-
-My career has been shaped by my love for problem-solving and continuous learning. I specialize in building modern, maintainable systems using a mix of technologies like Ruby on Rails, React.js, and Node.js, and I’m passionate about creating intuitive user experiences, optimizing back-end processes, and ensuring high-quality code through test-driven development.
-
-Throughout my journey, I’ve worked on everything from building RESTful APIs and database management to designing cloud-based deployments and event-driven architectures. I believe in the power of collaboration and thrive in agile environments, where I can both learn from others and share my knowledge to help teams grow.
-
-When I’m not coding, you’ll likely find me diving into new math concepts, exploring the latest tech trends, or brainstorming creative ways to solve complex challenges.
-
-Feel free to check out my projects and get in touch if you’d like to collaborate or just chat about tech!</p>
+    <div className="about-container">
+      <div className="text-row">
+        <p>
+          I'm a Software Developer with a strong foundation in Mathematics, based in Kingston, ON, Canada. Over the years, I've had the privilege of working on a wide variety of projects, from developing scalable web applications to designing innovative software solutions that drive technical excellence.
+        </p>
+        <p>
+          My career is driven by a passion for problem-solving and continuous learning. I specialize in building modern, maintainable systems using technologies like Ruby on Rails, React.js, and Node.js. I'm passionate about creating intuitive user experiences, optimizing backend processes, and ensuring high-quality code through test-driven development.
+        </p>
+        <p>
+          Along the way, I've gained experience in building RESTful APIs, managing databases, designing cloud-based deployments, and implementing event-driven architectures. I thrive in collaborative, agile environments where I can both learn from others and share my knowledge to help teams succeed.
+        </p>
+        <p>
+          Outside of work, I’m often exploring new math concepts, staying up to date with the latest tech trends, or brainstorming creative ways to tackle complex challenges.
+        </p>
+        <p>
+          Feel free to explore my projects and get in touch if you'd like to collaborate or chat about tech!
+        </p>
+      </div>
+      <div className="image-row">
+        <i className="fa fa-coffee"></i>
+      </div>
     </div>
-  )
+  );
 }
+
 
 export default About
