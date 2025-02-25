@@ -3,8 +3,8 @@ import './About.css'
 
 function About() {
   return (
-    <div className="about-container">
-      <div className="text-row">
+    <div className="abt-container">
+      <div className="abt-text-column">
         <p>
           I'm a Software Developer with a strong foundation in Mathematics, based in Kingston, ON, Canada. Over the years, I've had the privilege of working on a wide variety of projects, from developing scalable web applications to designing innovative software solutions that drive technical excellence.
         </p>
@@ -21,8 +21,9 @@ function About() {
           Feel free to explore my projects and get in touch if you'd like to collaborate or chat about tech!
         </p>
       </div>
-      <div className="image-row">
-        <i className="fa fa-coffee"></i>
+      <div className="abt-image-column">
+        {/* <i className="fa fa-coffee"></i> */}
+        <img  className="abt-image" alt="" src='/images/nazila.jpg'/>
       </div>
     </div>
   );
