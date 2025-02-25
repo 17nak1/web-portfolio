@@ -1,11 +1,22 @@
 .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+.contact-box {
   max-width: 500px;
-  margin: 50px auto;
+  margin: 0 auto; /* Remove the top margin */
   padding: 20px;
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
 }
 
 h2 {
