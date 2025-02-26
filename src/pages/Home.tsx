@@ -1,9 +1,9 @@
 import React from 'react';
 import VideoSection from '../components/VideoSection';
 
-function Home () {
+const Home: React.FC = () => {
   return (
-      <VideoSection/>
+    <VideoSection />
   );
 }
 
