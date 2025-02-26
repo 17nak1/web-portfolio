@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   object-fit: cover;
-  margin-left: 8%;
+  margin: 8%;
 }
 
 .image-column {
@@ -41,6 +41,7 @@ p {
 
 .description-section {
   margin-top: 10px;
+  text-align: justify;
 }
 
 .container > span {
@@ -66,12 +67,12 @@ p {
 }
 
 .animated-text {
-  font-size: 3.5em;
+  font-size: 3vw;
   color: rgb(53 58 73);
   white-space: nowrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -88,7 +89,7 @@ p {
   }
 
   .container > span {
-    font-size: 15px;
+    font-size: 50vw;
     margin-top: -100px;
   }
 
