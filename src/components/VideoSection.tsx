@@ -35,7 +35,7 @@ const VideoSection: React.FC = () => {
             className='btns'
             buttonStyle='btn--outline'
             buttonSize='btn--large'
-            to='/about'
+            to='#about'
           >
             More About Me
           </Button>

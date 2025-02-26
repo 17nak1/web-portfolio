@@ -6,13 +6,12 @@ import './Button.css';
 const STYLES = ['btn--primary', 'btn--outline'] as const;
 const SIZES = ['btn--medium', 'btn--large'] as const;
 
-// Type definitions for the Button props
 interface ButtonProps {
   children: React.ReactNode;
-  type?: 'button' | 'submit' | 'reset';
+  type?: 'button' | 'submit';
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   buttonStyle?: typeof STYLES[number]; // 'btn--primary' | 'btn--outline'
-  buttonSize?: typeof SIZES[number]; // 'btn--medium' | 'btn--large'
+  buttonSize?: typeof SIZES[number];
   to?: string; // Path or anchor link
   className?: string; 
 }
@@ -23,12 +22,12 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   buttonStyle = 'btn--primary',
   buttonSize = 'btn--medium',
-  to = '/sign-up',
+  to = '#home',
 }) => {
   // Check if the button style and size are valid
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-
+  
   // Determine if the button is an anchor (for smooth scrolling)
   const isAnchor = to.startsWith('#');
 

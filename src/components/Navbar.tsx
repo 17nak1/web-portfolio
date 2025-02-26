@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
             </li>
           ))}
         </ul>
-        {button && <Button buttonStyle='btn--outline'>Let's Talk!</Button>}
+        {button && <Button buttonStyle='btn--outline' to='#contact'>Let's Talk!</Button>}
       </div>
     </nav>
   );
