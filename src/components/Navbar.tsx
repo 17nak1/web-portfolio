@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import './Navbar.css';
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-  const [activeSection, setActiveSection] = useState('home');
+const Navbar: React.FC = () => {
+  const [click, setClick] = useState<boolean>(false);
+  const [button, setButton] = useState<boolean>(true);
+  const [activeSection, setActiveSection] = useState<string>('home');
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const handleClick = (): void => setClick(!click);
+  const closeMobileMenu = (): void => setClick(false);
 
-  const showButton = () => {
+  const showButton = (): void => {
     setButton(window.innerWidth > 960);
   };
 
@@ -21,7 +21,7 @@ function Navbar() {
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       const sections = ['home', 'about', 'projects', 'contact'];
       let currentSection = 'home';
 
@@ -64,6 +64,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
