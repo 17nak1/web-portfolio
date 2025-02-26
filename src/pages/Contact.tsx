@@ -16,8 +16,8 @@ const Contact = () => {
         </form>
 
         <div className="social-links">
-          <a href="https://github.com/17nak1" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/nazila-akhavan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/17nak1" target="_blank"  className="ci ci-github ci-2x ci-md"></a>
+          <a href="https://www.linkedin.com/in/nazila-akhavan/" target="_blank" className="ci ci-linkedin ci-2x ci-md"></a>
         </div>
       </div>
     </div>
