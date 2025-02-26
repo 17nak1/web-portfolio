@@ -1,31 +1,51 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './VideoSection.css';
+import { TypeAnimation } from 'react-type-animation';
+import { Button } from './Button';
 
 function VideoSection() {
   return (
-    <div className='video-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
-      <div className='video-btns'>
+    <div className='container'>
+      <div class='text-column'>
+        <div className='introduction-section'>
+          <p style={{ fontSize: '3em', color: 'rgb(68 74 94)' }}>Hi! I’m Nazila.</p>
+        </div>
+        <TypeAnimation
+          sequence={[
+            'I’m a Software Developer.',
+            1500, // wait for 1 second
+            'Building innovative solutions.',
+            1500, // wait for 1 second
+          ]}
+          speed={50}
+          wrapper='span'
+          repeat={Infinity}
+          cursor={true}
+          className='animated-text'
+        />
+        <div className='description-section'>
+          <p> 
+            Passionate about building scalable solutions, solving complex problems, and turning ideas into reality.
+            Bridging mathematics and software to create innovative and efficient applications.
+          </p>
+        </div>
+        <div className='aboutme-btns'>
         <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-          onClick={console.log("Yay!")}
+          to='/about'
         >
-          GET STARTED
+          More About Me
         </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
-        </Button>
+      </div>
+      </div>
+      <div class='image-column'>
+        <img  alt='' src='/images/woman-coder.jpg'/>
+        {/* <p class='image-credit'>
+          Image by <a href='https://www.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_65309450.htm' target='_blank' rel='noopener noreferrer'>Freepik</a>
+        </p> */}
       </div>
     </div>
   );

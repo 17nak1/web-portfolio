@@ -5,6 +5,11 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: #eaf8ff;
+}
+
 .home,
 .services,
 .products,
@@ -41,4 +46,11 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+.gradient-line {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(64.5deg, rgb(245, 116, 185) 14.7%, rgb(89, 97, 223) 88.7%);
+  margin: 30px auto; /* Add some spacing for better visibility */
 }

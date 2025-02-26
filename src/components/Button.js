@@ -7,16 +7,30 @@ const SIZES = ['btn--medium', 'btn--large'];
 
 export const Button = ({
   children,
-  type,
+  type = 'button',
   onClick,
   buttonStyle,
-  buttonSize
+  buttonSize,
+  to = '/sign-up'
 }) => {
-  console.log(typeof onClick)
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-  return (
-    <Link to='/sign-up' className='btn-mobile'>
+
+  // If the link is an in-page anchor, use <a> for smooth scrolling
+  const isAnchor = to.startsWith('#');
+
+  return isAnchor ? (
+    <a href={to} className='btn-mobile'>
+      <button
+        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        onClick={onClick}
+        type={type}
+      >
+        {children}
+      </button>
+    </a>
+  ) : (
+    <Link to={to} className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
@@ -26,4 +40,4 @@ export const Button = ({
       </button>
     </Link>
   );
-}
+};
