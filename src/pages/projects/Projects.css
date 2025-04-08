@@ -7,48 +7,51 @@
 
 .icon-circle {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotateCircle 20s linear infinite; /* Added animation */
 }
 
 .icon-circle i {
   position: absolute;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition for scale and color */
 }
 
 .icon-circle i:nth-child(1) {
-  transform: translate(150px, 0);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .icon-circle i:nth-child(2) {
-  transform: translate(75px, 130px);
+  top: 25%;
+  right: 0;
 }
 
 .icon-circle i:nth-child(3) {
-  transform: translate(-75px, 130px);
+  bottom: 25%;
+  right: 0;
 }
 
 .icon-circle i:nth-child(4) {
-  transform: translate(-150px, 0);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .icon-circle i:nth-child(5) {
-    transform: translate(-75px, -130px);
+  bottom: 25%;
+  left: 0;
 }
 
 .icon-circle i:nth-child(6) {
-    transform: translate(75px, -130px);
+  top: 25%;
+  left: 0;
 }
 
-@keyframes rotateCircle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.icon-circle i.active {
+  transform: scale(1.2); /* Make the icon larger */
 }
