@@ -1,8 +1,8 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css';
 import './VideoSection.css';
 import { TypeAnimation } from 'react-type-animation';
-import { Button } from './Button';
+import { Button } from '../button/Button';
 
 const VideoSection: React.FC = () => {
   return (

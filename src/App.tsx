@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import Projects from './pages/Projects';
+import Projects from './pages/projects/Projects';
 
 const App: React.FC = () => {
   return (

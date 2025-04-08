@@ -1,4 +1,3 @@
-import React from "react";
 import "./Contact.css";
 
 const Contact = () => {
@@ -16,8 +15,8 @@ const Contact = () => {
         </form>
 
         <div className="social-links">
-          <a href="https://github.com/17nak1" target="_blank"  className="ci ci-github ci-2x ci-md"></a>
-          <a href="https://www.linkedin.com/in/nazila-akhavan/" target="_blank" className="ci ci-linkedin ci-2x ci-md"></a>
+          <a href="https://github.com/17nak1" target="_blank"  className="ci ci-github ci-2x ci-md" rel="noreferrer" aria-label="GitHub Profile"></a>
+          <a href="https://www.linkedin.com/in/nazila-akhavan/" target="_blank" className="ci ci-linkedin ci-2x ci-md" rel="noopener noreferrer" aria-label="LinkedIn Profile"></a>
         </div>
       </div>
     </div>
