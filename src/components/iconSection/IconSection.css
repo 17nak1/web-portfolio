@@ -1,0 +1,57 @@
+.stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icon-circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle i {
+  position: absolute;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition for scale and color */
+}
+
+.icon-circle i:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-circle i:nth-child(2) {
+  top: 25%;
+  right: 0;
+}
+
+.icon-circle i:nth-child(3) {
+  bottom: 25%;
+  right: 0;
+}
+
+.icon-circle i:nth-child(4) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-circle i:nth-child(5) {
+  bottom: 25%;
+  left: 0;
+}
+
+.icon-circle i:nth-child(6) {
+  top: 25%;
+  left: 0;
+}
+
+.icon-circle i.active {
+  transform: scale(1.2); /* Make the icon larger */
+}
