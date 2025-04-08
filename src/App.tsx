@@ -5,6 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Projects from './pages/Projects';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,10 @@ const App: React.FC = () => {
       <div className='gradient-line'></div>
       <section id='about'>
         <About />
+      </section>
+      <div className='gradient-line'></div>
+      <section id='projects'>
+        <Projects />
       </section>
       <div className='gradient-line'></div>
       <section id='contact'>
