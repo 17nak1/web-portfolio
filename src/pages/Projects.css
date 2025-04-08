@@ -1,0 +1,54 @@
+.stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icon-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotateCircle 20s linear infinite; /* Added animation */
+}
+
+.icon-circle i {
+  position: absolute;
+}
+
+.icon-circle i:nth-child(1) {
+  transform: translate(150px, 0);
+}
+
+.icon-circle i:nth-child(2) {
+  transform: translate(75px, 130px);
+}
+
+.icon-circle i:nth-child(3) {
+  transform: translate(-75px, 130px);
+}
+
+.icon-circle i:nth-child(4) {
+  transform: translate(-150px, 0);
+}
+
+.icon-circle i:nth-child(5) {
+    transform: translate(-75px, -130px);
+}
+
+.icon-circle i:nth-child(6) {
+    transform: translate(75px, -130px);
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
