@@ -1,57 +1,92 @@
-.stack-container {
+.prj-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 6rem;
   justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
-.icon-circle {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+.prj-text-column {
+  flex: 1 1 600px;
+  max-width: 800px;
+  height: 100vh;
+}
+
+.prj-icon-column {
+  flex: 1 1 300px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.icon-circle i {
-  position: absolute;
-  transition: transform 0.3s ease, color 0.3s ease; /* Transition for scale and color */
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
 }
 
-.icon-circle i:nth-child(1) {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.icon-circle i:nth-child(2) {
-  top: 25%;
-  right: 0;
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
 }
 
-.icon-circle i:nth-child(3) {
-  bottom: 25%;
-  right: 0;
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
-.icon-circle i:nth-child(4) {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.project-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #34495e;
 }
 
-.icon-circle i:nth-child(5) {
-  bottom: 25%;
-  left: 0;
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.75rem;
 }
 
-.icon-circle i:nth-child(6) {
-  top: 25%;
-  left: 0;
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.icon-circle i.active {
-  transform: scale(1.2); /* Make the icon larger */
+.tag {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+}
+
+.project-card a {
+  color: #3498db;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Make it look good on smaller screens */
+@media (max-width: 768px) {
+  .prj-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
