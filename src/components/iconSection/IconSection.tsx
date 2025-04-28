@@ -17,15 +17,15 @@ const IconeSection: React.FC = () => {
   }, [iconIndex]);
 
   return (
-    <div className="stack-container">
+    <div className="icon-container">
       <div className="icon-circle">
-        <i className={`ci ci-react ci-3x ${activeIcon === 0 ? 'active' : ''}`}></i>
-        <i className={`ci ci-nodejs ci-3x ${activeIcon === 1 ? 'active' : ''}`}></i>
-        <i className={`ci ci-express ci-3x ${activeIcon === 2 ? 'active' : ''}`}></i>
-        <i className={`ci ci-mysql ci-3x ${activeIcon === 3 ? 'active' : ''}`}></i>
-        <i className={`ci ci-typescript ci-3x ${activeIcon === 4 ? 'active' : ''}`}></i>
-        <i className={`ci ci-javascript ci-3x ${activeIcon === 5 ? 'active' : ''}`}></i>
-        <i className={`ci ci-ruby ci-3x ${activeIcon === 6 ? 'active' : ''}`}></i>
+        <i className={`ci ci-react ${activeIcon === 0 ? 'active' : ''}`}></i>
+        <i className={`ci ci-nodejs ${activeIcon === 1 ? 'active' : ''}`}></i>
+        <i className={`ci ci-express ${activeIcon === 2 ? 'active' : ''}`}></i>
+        <i className={`ci ci-mysql ${activeIcon === 3 ? 'active' : ''}`}></i>
+        <i className={`ci ci-typescript ${activeIcon === 4 ? 'active' : ''}`}></i>
+        <i className={`ci ci-javascript ${activeIcon === 5 ? 'active' : ''}`}></i>
+        <i className={`ci ci-ruby ${activeIcon === 6 ? 'active' : ''}`}></i>
       </div>
     </div>
   );
