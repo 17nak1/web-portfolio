@@ -1,15 +1,15 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css';
 import './VideoSection.css';
 import { TypeAnimation } from 'react-type-animation';
-import { Button } from './Button';
+import { Button } from '../button/Button';
 
-function VideoSection() {
+const VideoSection: React.FC = () => {
   return (
     <div className='container'>
-      <div class='text-column'>
+      <div className='text-column'>
         <div className='introduction-section'>
-          <p style={{ fontSize: '3em', color: 'rgb(68 74 94)' }}>Hi! I’m Nazila.</p>
+          <p style={{ fontSize: '3em', color: 'rgb(68, 74, 94)' }}>Hi! I’m Nazila.</p>
         </div>
         <TypeAnimation
           sequence={[
@@ -25,25 +25,25 @@ function VideoSection() {
           className='animated-text'
         />
         <div className='description-section'>
-          <p> 
+          <p>
             Passionate about building scalable solutions, solving complex problems, and turning ideas into reality.
             Bridging mathematics and software to create innovative and efficient applications.
           </p>
         </div>
         <div className='aboutme-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-          to='/about'
-        >
-          More About Me
-        </Button>
+          <Button
+            className='btns'
+            buttonStyle='btn--outline'
+            buttonSize='btn--large'
+            to='#about'
+          >
+            More About Me
+          </Button>
+        </div>
       </div>
-      </div>
-      <div class='image-column'>
-        <img  alt='' src='/images/woman-coder.jpg'/>
-        {/* <p class='image-credit'>
+      <div className='image-column'>
+        <img alt='' src='/images/woman-coder.jpg' />
+        {/* <p className='image-credit'>
           Image by <a href='https://www.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_65309450.htm' target='_blank' rel='noopener noreferrer'>Freepik</a>
         </p> */}
       </div>

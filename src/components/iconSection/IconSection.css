@@ -1,0 +1,93 @@
+.icon-circle {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.icon-circle i {
+  position: absolute;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: scale(3.5); /* make default icons bigger */
+}
+
+.icon-circle i:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(3.5);
+}
+
+.icon-circle i:nth-child(2) {
+  top: 25%;
+  right: 0;
+  transform: scale(3.5);
+}
+
+.icon-circle i:nth-child(3) {
+  bottom: 25%;
+  right: 0;
+  transform: scale(3.5);
+}
+
+.icon-circle i:nth-child(4) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(3.5);
+}
+
+.icon-circle i:nth-child(5) {
+  bottom: 25%;
+  left: 0;
+  transform: scale(3.5);
+}
+
+.icon-circle i:nth-child(6) {
+  top: 25%;
+  left: 0;
+  transform: scale(3.5);
+}
+
+.icon-circle i.active {
+  transform: scale(4.2) !important; /* scale a bit more when active */
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .icon-circle {
+    width: 50vw;
+    height: 50vw;
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .icon-circle i {
+    transform: scale(4.5);
+  }
+
+  .icon-circle i.active {
+    transform: scale(5.2) !important;
+  }
+}
+
+/* Large screens */
+/* @media (min-width: 1024px) {
+  .icon-circle {
+    width: 40vw;
+    height: 40vw;
+    max-width: 600px;
+    max-height: 600px;
+  }
+
+  .icon-circle i {
+    transform: scale(6);
+  }
+
+  .icon-circle i.active {
+    transform: scale(7) !important;
+  }
+} */
