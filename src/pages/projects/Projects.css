@@ -4,7 +4,7 @@
   gap: 2rem;
   padding: 6rem;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .prj-text-column {
@@ -82,10 +82,32 @@
   text-decoration: underline;
 }
 
-/* Optional: Make it look good on smaller screens */
 @media (max-width: 768px) {
   .prj-container {
     flex-direction: column;
     padding: 1rem;
+  }
+
+  .prj-text-column {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .prj-icon-column {
+    flex-basis: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .prj-container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
   }
 }
